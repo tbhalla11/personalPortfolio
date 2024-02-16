@@ -255,7 +255,7 @@ const NavBar = () =>{
                     marginBottom: "20;",
                     cursor: "pointer",
                 }}>
-                    <GrCloudComputer size="3rem" /> <Span>Portfolio</Span>
+                    <GrCloudComputer size="3rem" /> <Span>Tarun Bhalla</Span>
                 </a>
             </NavLogo>
             <PhoneIcon>
