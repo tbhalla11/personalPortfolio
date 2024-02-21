@@ -6,6 +6,9 @@ import Person from "./components/Person";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import {BrowserRouter as Router} from "react-router-dom";
+import Experience from "./components/Experience/Experience";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 const Body = styled.div`
   background-color: ${({ theme}) => theme.bg};
@@ -38,11 +41,14 @@ function App() {
         <Router>
             <NavBar/>
             <Body>
-                <Person></Person>
                 <Wrapper>
+                    <Person></Person>
+                    <Experience></Experience>
                     <Education></Education>
                     <Skills></Skills>
+                    <Contact/>
                 </Wrapper>
+                <Footer/>
             </Body>
         </Router>
     </ThemeProvider>

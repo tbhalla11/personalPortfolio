@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Bio} from "../../data/constant";
 import Typewriter from "typewriter-effect";
 import headshot from "../../images/headshot.jpeg";
+import PersonAnimation from "../PersonAnimation";
 
 
 export const PersonContainer = styled.div`
@@ -19,7 +20,7 @@ export const PersonContainer = styled.div`
   }
   z-index: 1;
 
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 100%, 0 100%);
 `;
 
 export const PersonBackdrop = styled.div`
@@ -76,6 +77,7 @@ export const InnerLeft = styled.div`
     flex-direction: column;
     align-items: center;
   }
+  cursor: default;
 `;
 
 export const InnerRight = styled.div`
@@ -122,6 +124,7 @@ export const Title = styled.div`
   font-size: 50px;
   color: ${({ theme }) => theme.text_primary};  
   line-height: 68px;
+  
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -130,14 +133,15 @@ export const Title = styled.div`
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 8px;
+    
   }
 
   &:hover {
     transition: font-weight(800);
     transform: scale(1.05);
     color: #c730f5;
-    box-shadow: 0px 0px 52px #c730f5;
   }
+  cursor: default;
 `;
 
 export const TextLoop = styled.div`
@@ -155,6 +159,7 @@ export const TextLoop = styled.div`
     line-height: 48px;
     margin-bottom: 16px;
   }
+  cursor: pointer;
 `;
 
 export const Span = styled.span`
@@ -217,7 +222,9 @@ export const ResumeButton = styled.a`
 const Person = () =>{
     return (<div id="about">
                 <PersonContainer>
-                    <PersonBackdrop></PersonBackdrop>
+                    <PersonBackdrop>
+                        <PersonAnimation></PersonAnimation>
+                    </PersonBackdrop>
                     <PersonInnerContainer>
                         <InnerLeft>
                             <Title>

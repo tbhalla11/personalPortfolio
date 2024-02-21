@@ -270,7 +270,7 @@ const NavBar = () =>{
                 <NavLinks href="#education">Education</NavLinks>
             </NavItems>
             <ButtonContainer>
-                <GitHubButton>Github Profile</GitHubButton>
+                <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
             </ButtonContainer>
         </Container>
         {
