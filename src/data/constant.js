@@ -1,16 +1,19 @@
 export const Bio = {
     name: "Tarun Bhalla",
     roles: [
-        "Full Stack Developer",
+        "Software Engineer",
+        "Frontend Developer",
         "Java Developer",
-        "Automation Tester",
-        "QA Developer",
+        "Data Engineer",
+        "Automation Developer"
     ],
     description:
-        "I'm a motivated developer that is always learning and looking for my next challenge. A great team player with a positive mindset, and driven to produce exceptional results.",
+        "Software Engineer with 4 + years of Full Stack development experience. \n I've worked closely with clients, PO's " +
+        "& collegues to help deliver the best products possible. \n Currently, a masters student with a focus on ML and Computing" +
+        "Systems, along with being a full stack engineer.",
     github: "https://github.com/tbhalla11",
     resume:
-        "https://firebasestorage.googleapis.com/v0/b/tarunbhallaportfolio.appspot.com/o/resume%20(3).pdf?alt=media&token=4d4296f1-ca81-4f8f-aaeb-a00a264285f9",
+        "https://firebasestorage.googleapis.com/v0/b/tarunbhallaportfolio.appspot.com/o/TarunBhalla_V2.1.pdf?alt=media&token=3aedc2bb-8312-48bb-80d0-548caf30d0cd",
     linkedin: "https://www.linkedin.com/in/tarun-bhalla/",
     insta: "https://www.instagram.com/tbhalla_11?igsh=c2YyY3BpNm10dGZp&utm_source=qr",
     facebook: "https://www.facebook.com/Tarunnnnn/",
@@ -148,60 +151,38 @@ export const experiences = [
         role: "Fullstack Developer",
         company: "CGI",
         date: "January 2022 - Current",
-        desc: "Working on full stack development for various projects, using a wide array of technologies.",
         skills: [
-            "Docker",
             "Java",
-            "Cypress",
             "JavaScript",
-            "Node Js",
-            "Cucumber & Gherkin",
-            "React js",
-            "Angular js",
-            "Spring Boot",
+            "Node.js",
+            "Postgres",
+            "SQL",
+            "Cypess",
             "Jenkins",
-            "OpenShift"
+            "AWS",
+            "React"
         ],
     },
     {
         id: 1,
-        img: "https://firebasestorage.googleapis.com/v0/b/tarunbhallaportfolio.appspot.com/o/CIPO.jpg?alt=media&token=0f9819eb-2fc1-4638-a548-bf787b0a64c2",
-        role: "Fullstack Developer",
-        company: "Canadian Intellectual Property Office",
-        date: "June 2023 - Present",
-        desc: "Building a full stack web application for a federal client. Building the application using Java, React & testing through Cypress.",
-        skills: [
-            "ReactJS",
-            "JavaScript",
-            "Java",
-            "HTML",
-            "CSS",
-            "Cypress",
-            "Docker"
-        ],
-    },
-    {
-        id: 2,
         img: "https://firebasestorage.googleapis.com/v0/b/tarunbhallaportfolio.appspot.com/o/SafetyS.jpeg?alt=media&token=9885aaab-213f-46eb-a5a4-73ba351aa6fe",
         role: "Front-End Developer Intern ",
         company: "Safety & Security Solutions",
         date: "January 2021 - January 2022",
-        desc: "Contributing to revamping and maintenance of the company website, primarily using Angular JS.",
         skills: [
             "Angular",
             "JavaScript",
-            "Docker",
             "CSS",
-            "HTML"
+            "HTML",
+            "SQL"
         ],
     },
     {
         id: 3,
-        img: "https://firebasestorage.googleapis.com/v0/b/tarunbhallaportfolio.appspot.com/o/SafetyS.jpeg?alt=media&token=9885aaab-213f-46eb-a5a4-73ba351aa6fe",
-        role: "Technical Support Analyst ",
-        company: "Safety & Security Solutions",
-        date: "June 2020 - January 2021",
-        desc: "Contributing to revamping and maintenance of the company website, primarily using Angular JS.",
+        img: "https://firebasestorage.googleapis.com/v0/b/tarunbhallaportfolio.appspot.com/o/TD.svg?alt=media&token=ddbdfd61-9141-422e-b194-1bfd92ff341c",
+        role: "Customer Experience Associate",
+        company: "TD Canada Trust",
+        date: "March 2015 - January 2020",
         skills: [
             "Jira",
             "Excel",
@@ -212,17 +193,24 @@ export const experiences = [
 
 export const education = [
     {
+      id: 2,
+      school: "Georgia Institution Of Technology",
+      date: "September 2024 - Current",
+      desc: "Specialization in Machine Learning and Computing Systems.",
+      degree: "Masters Degree"
+    },
+    {
         id: 1,
         school: "StackRoute",
         date: "January 2022 - April 2022",
-        desc: "Completed a bootcamp that focused on fine tuning our front-end & back-end skills. Focused on Java development, along with Angular.",
+        desc: "Bootcamp specializing in Java and Angular based Full Stack Development.",
         degree: "Full Stack Java Developer BootCamp",
     },
     {
         id: 0,
         school: "York University",
-        date: "September 2017 - January 2022",
-        desc: "Graduated with a Bachelors degree in Informational Technology which helped in teaching me the fundamentals of programming, cloud operations, databases & network security.",
+        date: "September 2018 - January 2022",
+        desc: "Focusing on fundamentals of Programming, Databases & Cloud Ops.",
         degree: "Bachelor of Information Technology ",
     },
 ];

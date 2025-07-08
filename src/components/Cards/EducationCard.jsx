@@ -10,6 +10,7 @@ const Document = styled.img`
     &:hover{
         cursor: pointer;
         opacity: 0.8;
+        transform: scale(1.5) ;
     }
 `
 
@@ -17,7 +18,7 @@ const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: ${({ theme }) => theme.text_primary + 95};
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
         font-size: 12px;
@@ -34,41 +35,41 @@ text-overflow: ellipsis;
 `
 
 const Card = styled.div`
-  width: 650px;
-  border-radius: 10px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  padding: 12px 16px;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  transition: all 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-    color: #e2cde8;
-    box-shadow: 0px 0px 52px #c56ee0;
-  }
-
-  @media only screen and (max-width: 768px) {
-    padding: 10px;
-    gap: 8px;
-    width: 300px;
-  }
-
-  &:hover ${Document} {
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    padding: 12px 16px;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
     display: flex;
-  }
+    flex-direction: column;
+    gap: 12px;
+    transition: all 0.3s ease-in-out;
 
-  &:hover ${Span} {
-    overflow: visible;
-    -webkit-line-clamp: unset;
+    &:hover {
+        transform: scale(1.25);
+        color: #25c134;
+        box-shadow: 0px 0px 52px #74c67d;
+    }
 
-  }
+    @media only screen and (max-width: 768px) {
+        padding: 10px;
+        gap: 8px;
+        width: 300px;
+    }
 
-  border: 0.1px solid #854CE6;
+    &:hover ${Document} {
+        display: flex;
+    }
+
+    &:hover ${Span} {
+        overflow: visible;
+        -webkit-line-clamp: unset;
+
+    }
+
+    border: 0.2px solid #ffffff;
 `
 
 const Top = styled.div`
@@ -88,8 +89,8 @@ const Body = styled.div`
 const Name = styled.div`
     font-size: 18px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
+    color: #4bdc6b;
+    @media only screen and (max-width: 768px) {
         font-size: 14px;
     }
 `

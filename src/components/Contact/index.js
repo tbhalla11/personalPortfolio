@@ -132,7 +132,7 @@ const ContactButton = styled.input`
 
   &:hover {
     transition: font-weight(800);
-    transform: scale(1.01);
+    transform: scale(1.21);
     color: black;
     cursor: pointer;
   }`;

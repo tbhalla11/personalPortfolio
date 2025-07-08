@@ -60,11 +60,11 @@ const Card = styled.div`
         -webkit-line-clamp: unset;
 
     }
-  &:hover {
-    transform: scale(1.05);
-    color: #e2cde8;
-    box-shadow: 0px 0px 52px #c56ee0;
-  }
+    &:hover {
+        transform: scale(1.15);
+        color: #25c134;
+        box-shadow: 0px 0px 52px #74c67d;
+    }
 
     border: 0.1px solid #306EE8;
     box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
@@ -96,8 +96,8 @@ const Body = styled.div`
 const Role = styled.div`
     font-size: 18px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
+    color: #4bdc6b;
+    @media only screen and (max-width: 768px) {
         font-size: 14px;
     }
 `

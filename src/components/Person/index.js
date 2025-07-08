@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {Bio} from "../../data/constant";
+import {Bio as bio, Bio} from "../../data/constant";
 import Typewriter from "typewriter-effect";
 import headshot from "../../images/headshot.jpeg";
 import PersonAnimation from "../PersonAnimation";
@@ -119,29 +119,30 @@ export const Img = styled.img`
 `;
 
 export const Title = styled.div`
-  font-family: "Arial";
-  font-weight: 800;
-  font-size: 50px;
-  color: ${({ theme }) => theme.text_primary};  
-  line-height: 68px;
-  
-  @media (max-width: 960px) {
-    text-align: center;
-  }
+    font-family: "Arial";
+    font-weight: 800;
+    font-size: 50px;
+    color: ${({theme}) => theme.text_primary};
+    line-height: 68px;
 
-  @media (max-width: 640px) {
-    font-size: 40px;
-    line-height: 48px;
-    margin-bottom: 8px;
-    
-  }
+    @media (max-width: 960px) {
+        text-align: center;
+    }
 
-  &:hover {
-    transition: font-weight(800);
-    transform: scale(1.05);
-    color: #c730f5;
-  }
-  cursor: default;
+    @media (max-width: 640px) {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 8px;
+
+    }
+
+    &:hover {
+        transition: margin-left;
+        transform :scaleX(1.25);
+        color: #4bdc6b;
+    }
+
+    cursor: default;
 `;
 
 export const TextLoop = styled.div`
@@ -163,8 +164,8 @@ export const TextLoop = styled.div`
 `;
 
 export const Span = styled.span`
-  color: ${({ theme }) => theme.primary};
-  cursor: pointer;
+    color: #4bdc6b;
+    cursor: pointer;
 `;
 
 export const Subtitle = styled.div`
@@ -227,8 +228,11 @@ const Person = () =>{
                     </PersonBackdrop>
                     <PersonInnerContainer>
                         <InnerLeft>
+                            <h3>
+                                Hey! Nice to meet you. I'm
+                            </h3>
                             <Title>
-                                Hey! I am <br/> {Bio.name}
+                                {bio.name}
                             </Title>
                             <TextLoop>
                                 I am a ...
