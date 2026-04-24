@@ -6,6 +6,7 @@ import { GrCloudComputer } from "react-icons/gr";
 import {FaBars} from "react-icons/fa";
 import {darkTheme as theme} from "../../utilities/theme";
 import {Bio} from "../../data/constant";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Nav = styled.div`
   background-color: ${({theme}) => theme.card_light};
@@ -242,56 +243,58 @@ export const Span = styled.div`
 `
 
 
-const NavBar = () =>{
+const NavBar = () => {
     const [open, setOpen] = React.useState(false);
     return (
-    <Nav>
-        <Container>
-            <NavLogo to="/">
-                <a style ={{
-                    display: "flex",
-                    alignItems: "center",
-                    color: "white",
-                    marginBottom: "20;",
-                    cursor: "pointer",
-                }}>
-                    <GrCloudComputer size="3rem" /> <Span>Tarun Bhalla</Span>
-                </a>
-            </NavLogo>
-            <PhoneIcon>
-                <FaBars onClick={() =>{
-                setOpen(!open)
-            }}/>
-            </PhoneIcon>
-            <NavItems>
-                <NavLinks href="#about">Home</NavLinks>
-                <NavLinks href="#skills">Skills</NavLinks>
-                <NavLinks href="#experience">Experience</NavLinks>
-                <NavLinks href="#education">Education</NavLinks>
-            </NavItems>
-            <ButtonContainer>
-                <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
-            </ButtonContainer>
-        </Container>
-        {
-            open &&
-            <MobileMenu open={open}>
-                <MobileLink href="#about" onClick={() => {
-                    setOpen(!open)
-                }}>About</MobileLink>
-                <MobileLink href='#skills' onClick={() => {
-                    setOpen(!open)
-                }}>Skills</MobileLink>
-                <MobileLink href='#experience' onClick={() => {
-                    setOpen(!open)
-                }}>Experience</MobileLink>
-                <MobileLink href='#education' onClick={() => {
-                    setOpen(!open)
-                }}>Education</MobileLink>
-                <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton>
-            </MobileMenu>
-        }
-    </Nav>
-    )}
+        <Nav>
+            <Container>
+                <NavLogo to="/">
+                    <a style={{
+                        display: "flex",
+                        alignItems: "center",
+                        color: "white",
+                        marginBottom: "20;",
+                        cursor: "pointer",
+                    }}>
+                        <GrCloudComputer size="3rem" /> <Span>Tarun Bhalla</Span>
+                    </a>
+                </NavLogo>
+                <PhoneIcon>
+                    <FaBars onClick={() => { setOpen(!open) }} />
+                </PhoneIcon>
+                <NavItems>
+                    <NavLinks href="#about">Home</NavLinks>
+                    <NavLinks href="#experience">Experience</NavLinks>
+                    <NavLinks href="#projects">Projects</NavLinks>
+                    <NavLinks href="#skills">Skills</NavLinks>
+                    <NavLinks href="#education">Education</NavLinks>
+                </NavItems>
+                <ButtonContainer>
+                    <GitHubButton href={Bio.github} target="_blank" rel="noopener noreferrer">
+                        <GitHubIcon style={{ marginRight: 6, fontSize: 18 }} /> GitHub
+                    </GitHubButton>
+                </ButtonContainer>
+            </Container>
+            {
+                open &&
+                <MobileMenu open={open}>
+                    <MobileLink href="#about" onClick={() => { setOpen(!open) }}>Home</MobileLink>
+                    <MobileLink href='#experience' onClick={() => { setOpen(!open) }}>Experience</MobileLink>
+                    <MobileLink href='#projects' onClick={() => { setOpen(!open) }}>Projects</MobileLink>
+                    <MobileLink href='#skills' onClick={() => { setOpen(!open) }}>Skills</MobileLink>
+                    <MobileLink href='#education' onClick={() => { setOpen(!open) }}>Education</MobileLink>
+                    <GitHubButton
+                        style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }}
+                        href={Bio.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <GitHubIcon style={{ marginRight: 6, fontSize: 18 }} /> GitHub
+                    </GitHubButton>
+                </MobileMenu>
+            }
+        </Nav>
+    )
+}
 
 export default NavBar;
